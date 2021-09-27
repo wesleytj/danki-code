@@ -1,7 +1,8 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: "Open Sans";
+	box-sizing: border-box;
+	font-family: "Open Sans"
 }
 
 html,body{
@@ -10,115 +11,120 @@ html,body{
 
 @font-face{
 	src:url('../fonts/OpenSans-Light.ttf');
-	font-family: "Open Sans";	
+	font-family: "Open Sans";
 }
-@font-face{
-	src:url('../fonts/OpenSans-Semibold.ttf');
-	font-family: "OpenSans-Semibold";
+
+.clear{
+	clear: both;
 }
 
 .center{
-	width: 1280px;/*largura*/
-	margin: 0 auto;/*para centralizar*/
+	width: 1200px;
+	margin: 0 auto;
+	padding:0 2%;
 }
 
 .header{
-	min-width: 1280px;
+	min-width: 1200px;
 	width: 100%;
 	height: 60px;
-	background-color: #00ffff;
+	background-color: #212343;
 }
 
 .header img{
-	width: 200px;
-	margin-top: 15px;	
+	margin: 15px;
 }
 
-.container-banner{		
-	background-image: url(../img/bg_01.jpg);
-	min-width: 1280px;
+.container-banner{
 	width: 100%;
-	height: 560px;	
+	min-width: 1200px;
+	height: 557px;
+	background-image:url('../images/header_bg.png');
+	background-size: cover;
+	background-position: center;
 }
 
 .container-banner > .center{
 	height: 100%;
+	/*text-align: right;*/
 }
 
 .form{
+	padding:10px;
 	width: 400px;
 	height: calc(100% + 30px);
 	float: right;
 	position: relative;
-	top: -22px;
+	top:-15px;
+	border-width: 12px;
+	border-color: rgba(120,120,120,0.5);
+	border-style: solid;
 	background-color: white;
-	border:8px solid #59ffd3;
+	background-clip:padding-box;
+	/*background-origin tem o mesmo conceito porém serve para imagens.*/
 }
 
 .form h2{
 	font-weight: normal;
-	color: #024735;
-	font-size:17px;
-	margin: 15px 10px;
+	color: #999999;
+	font-size: 21px;
 }
 
 .input-container{
-	margin-top: 20px;
-	margin-left: 10px;
+	margin-top:20px;
 }
 
 .input-container span{
 	display: inline-block;
 	width: 100%;
-	font-size: 13px;
-	font-family: "OpenSans-Semibold";
+	color: #BBBBBB;
+	font-size: 17px;
 }
 
 .form p{
 	display: inline-block;
 	width: 100%;
-	font-size: 15px;
-	font-family: bold;
-	margin: 20px 10px;
+	color: #BBBBBB;
+	font-size: 17px;
+	margin:20px 0;
 }
 
-.input-container input[type="text"]{
+.input-container input[type=text]{
+	margin-top:8px;
 	width: 344px;
 	height: 55px;
-	border: 1px solid #024735;
-	margin-top: 10px;
+	border:1px solid #ccc;
 }
 
-.input-submit-container{
+.form .input-submit-container{
 	text-align: center;
 }
 
-.form input[type="submit"]{
+.form input[type=submit]{
+	color: white;
+	font-size: 25px;
 	width: 280px;
 	height: 56px;
-	background-color: #0cc292;	
-	color: white;
-	font-size: 20px;
-	font-family: bold;
 	display: inline-block;
-	border-right: 2px solid #06916d;
-	border-left: 4px solid #06916d;
-	border-top: 2px solid #06916d;
-	border-bottom: 8px solid #1df5bc;
+	background-color: #363A6D;
+	border-top:0;
+	border-right: 0;
+	border-left: 0;
 	cursor: pointer;
+	border-bottom: 5px solid #4A5097;
 }
-.form input[type="submit"]:hover{
-	background-color: #07b587;
-	border-bottom: 8px solid #17e6af;
+
+.form input[type=submit]:hover{
+	background-color: #323665;
 }
 
 .container-list{
-	padding: 50px;
-	margin-top: 40px;
+	padding:30px;
+	margin-top:100px;
 	float: left;
-	width: 600px;
-	height: 300px;
-	background-color: rgba(167,252,230,0.7);
+	width: 519px;
+	height: 270px;
+	background-color: rgba(33,35,67,0.7);
 }
 
 .container-list ul{
@@ -126,107 +132,84 @@ html,body{
 }
 
 .container-list ul li{
-	margin-top: 15px;	
-	font-family: "OpenSans-Semibold";
-	text-shadow: -1px 1px 2px #59ffd3;
+	margin-top:18px;
+	color: white;
 }
 
-.container2{
-	min-width: 1280px;
-	padding: 100px 0;
-	background-color: #a1f7f6;
-	text-align: center;	
+
+.container-2{
+	min-width: 1200px;
+	padding:40px 0;
+	background-color: #ddd;
+	text-align: center;
 }
 
-.container2 h2{
+.container-2 h2{
 	font-weight: normal;
 }
 
-.container2 p{
-	text-align: left;
-	margin-top: 20px;
+.container-2 p{
+	width: 698px;
+	margin:15px 0;
+	display: inline-block;
+	text-align: justify;
 }
-
-@keyframes anime{
-	from{bottom: 1px;}
-	to{top: 0px;}
-}
-
-#arrow {animation-timing-function: ease-in-out;}
 
 .arrow{
-	position: relative;	
-	top: -35px;	
-	left: 50%;
-	margin-left: -17px;
-	width: 35px;
-	height: 35px;	
-	background-image: url('../img/seta_baixo.png');
+	position: relative;
+	top:60px;
+	left:50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/arrow.png');
 	background-size: 100% 100%;
-	animation: anime 0.7s infinite;
 }
 
-.perfil{
-	width: 100%;
-	height: 600px;
+.section-1{
+	min-width: 1200px;
+	padding:90px 0;
 }
 
-.section1{
-	width: 100%;	
-}
-
-.section1 h2{
+.section-1 h2{
 	text-align: center;
-	font-weight: normal;		
-	margin-top: 50px;
-	margin-bottom: 35px;
+	color: #462663;
+	font-weight: normal;
 }
 
-.container-section{	
+.container-section{
+	margin-top:40px;
+}
+
+.container-section{
 	text-align: center;
 }
 
 .container-single{
-	box-sizing: border-box;
-	width: 33.333%;		
 	float: left;
-	padding: 0 10px;	
+	width: 33.3333%;
+	padding:30px;
 }
 
-.text-container-single{
 
+.container-single p{
+	display: inline-block;
+	text-align: justify;
+	padding:10px 25px;
 }
 
-.text-container-single h2{	
-	margin-top: 0;
-}
-
-.text-container-single p{	
-	margin-top: 15px;
-	margin-bottom: 100px;
-	text-align: left;	
-}
-
-.container-single > div > img{
-	width: 70px;
-	margin: 15px auto;		
+.container-single img{
+	width:70px;
 }
 
 .footer{
-	clear: both;
-	/*border-top: 4px solid #00ffff;*/
-	background-color: #a1f7f6;
-	padding: 20px 0;
-	margin-top: 10px;
-}
-
-.footer h4{
+	/*clear:both;*/
+	border-top:2px solid #888888;
+	padding:20px 0;
 	text-align: center;
-	font-family: "OpenSans-Semibold";
+	color: #888;
 }
 
 .footer p{
-	text-align: center;
-	font-family: "OpenSans-Semibold";
-	font-size: 14px;
+	margin-top:8px;
 }
