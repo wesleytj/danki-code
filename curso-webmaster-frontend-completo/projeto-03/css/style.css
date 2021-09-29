@@ -54,16 +54,29 @@ header nav.desktop-menu li{
     padding: 0 20px;
 }
 
-header li a{
+header nav.desktop-menu li a{
     text-decoration: none;
     color: #fff;
 }
 
 header nav.mobile-menu{
     display: none;
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+    background-image: url('../imagens/icon-menu.png');
+    background-size: 100% 100%;
+}
+
+header nav.mobile-menu ul{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: #000;
 }
 
 header .chamada-01{
+    display: none;
     max-width: 600px;
     float: right;
     margin: 150px 80px;
@@ -95,10 +108,9 @@ section#sessao-01{
     float: left;
 
     position: relative;
-    left: 55px;
+    left: 235px;
 
     margin-top: 60px;
-    padding-left: 80px;
     color: #fff;
 }
 
@@ -114,12 +126,13 @@ section#sessao-01{
 
 .txt-sessao-01 ul{
     font-size: 15px;
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-left: 16px;
 }
 
 .txt-sessao-01 ul li{
     width: 100%;
-    margin-top: 8px;
+    margin-top: 18px;
     float: left;
 }
 
@@ -129,20 +142,23 @@ section#sessao-01{
     line-height: 40px;
     text-align: center;
 
-    margin-top: 10px;
+    margin-top: 25px;
 
     color: #fff;
     cursor: pointer;
     border-radius: 50px;
+    font-size: 14px;
     background-color: #ff703d;
 }
 
 .device-sessao-01{
     width: 50%;
+    max-width: 500px;
     height: 430px;
     float: left;
     position: relative;
     top: -30px;
+    right: 60px;
     background-image: url('../imagens/device.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
