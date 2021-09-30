@@ -205,8 +205,118 @@ section.sessao1 .container{
 .sessao2 img{
 	width: 100%;
 	margin-top:40px;
+
+	position: relative;
+	top: 79px;
 }
 
+.sessao3{
+	width: 100%;
+}
+
+.wraper-part1{
+	max-width: 600px;
+	float: right;
+	padding: 30px;
+}
+
+.part1{
+	width: 50%;
+	float: left;
+	color: #fff;
+	padding: 115px 0 90px 0;
+	background-color: #835fa7;
+}
+
+.part1 h2{
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 23px;
+}
+
+.part1 p{
+	font-size: 15px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+.part2{
+	width: 50%;
+	float: left;
+	padding: 140px 0 90px 0;
+	background-color: #fff;
+}
+
+.sobre-autor{
+	float: left;
+	max-width: 600px;
+	padding-left: 30px;
+}
+
+.titulo-autor{
+	float: left;
+	width: 100%;
+}
+
+.wraper-titulo-autor{
+	float: left;
+}
+
+.titulo-autor h2{
+	color: #232323;
+	font-weight: normal;
+	font-size: 22px;
+	padding-right: 20px;
+}
+
+.titulo-autor p{
+	font-size: 14px;
+	color: #232323;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.titulo-autor .img-autor{
+	float: left;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: -4px;
+	border-radius: 50%;
+	margin-left: 20px;
+	background-color: green;
+}
+
+.texto-autor{
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+
+.texto-autor p{
+	width: 70%;
+}
+
+.slider-bullets{
+	width: 100%;
+	float: left;
+	padding-left: 30px;
+	margin-top: 16px;
+}
+
+.slider-bullets span{
+	width: 6px;
+	height: 6px;
+	float: left;
+	cursor: pointer;
+	border-radius: 50%;
+	margin-right: 6px;
+	background-color: rgb(200, 200, 200);
+}
+
+span.selecionado{
+	background-color: rgb(100, 100, 100);
+}
 
 @media screen and (max-width: 830px){
 
