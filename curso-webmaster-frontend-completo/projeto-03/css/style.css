@@ -80,7 +80,10 @@ header .logo{
 	float: left;
 	width: 160px;
 	height: 40px;
-	background-color: #ccc;
+	background-image: url('../imagens/logo.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 header nav.desktop-menu ul{
@@ -90,6 +93,7 @@ header nav.desktop-menu ul{
 header nav.desktop-menu li{
 	float: left;
 	padding:0 20px;
+	line-height: 40px;
 }
 
 header nav.desktop-menu li a{
@@ -287,13 +291,16 @@ section.sessao1 .container{
 
 .titulo-autor .img-autor{
 	float: left;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	position: relative;
 	top: -4px;
 	border-radius: 50%;
 	margin-left: 20px;
-	background-color: green;
+	background-image: url('../imagens/user.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .texto-autor{
@@ -338,6 +345,7 @@ section.sessao4{
 	float: left;
 	width: 50%;
 	color: #fff;
+	padding: 0 10px;
 }
 
 .formulario h2{
@@ -385,6 +393,7 @@ section.sessao4{
 .wraper-map h2{
 	font-size: 25px;
 	font-weight: lighter;
+	padding: 0 0 15px 0;
 }
 
 .three-wraper-map{
@@ -411,6 +420,28 @@ section.sessao4{
 
 	border: 5px solid grey;
 	background-color: wheat;
+}
+
+/*******/
+
+/*>>> Footer <<<*/
+footer{
+	height: 80px;
+	color: #fff;
+	font-weight: lighter;
+	background-color: #192123;
+}
+
+footer p:nth-of-type(1){
+	float: left;
+	line-height: 80px;
+	padding: 0 4%;
+}
+
+footer p:nth-of-type(2){
+	float: right;
+	line-height: 80px;
+	padding: 0 4%;
 }
 
 /*******/
@@ -556,4 +587,21 @@ section.sessao4 .container{
 	margin-top: 20px;
 }
 
+}
+
+@media screen and (max-width: 460px){
+	footer{
+		height: auto;
+		text-align: center;
+	}
+
+	footer p:nth-of-type(1){
+		float: none;
+		line-height: 40px;
+	}
+	
+	footer p:nth-of-type(2){
+		float: none;
+		line-height: 40px;
+	}
 }
