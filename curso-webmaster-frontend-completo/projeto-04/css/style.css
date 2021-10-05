@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 html, body{
@@ -56,3 +56,77 @@ header nav a{
 }
 
 /*******************/
+
+/*>>> Sessao 01 | Mosaico <<<*/
+.single-mosaico{
+    width: calc(100% / 6);
+    float: left;
+}
+
+.img-single-mosaico{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 5px solid #fff;
+
+    /*  adicionar imagem do mosaico aqui 
+            background-image: url();
+     */
+}
+
+/*******************/
+
+/*>>> Sessao 02 | Servicos <<<*/
+
+section.servicos > .container{
+    max-width: 800px;
+    display: flex;
+    position: relative;
+    top: -40px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+section.servicos > .container .box-servico{
+    background-size: 18px 18px;
+    background-position: center calc(100% - 10px);
+    background-repeat: no-repeat;
+}
+
+section.servicos > .container .box-servico h2{
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section.servicos > .container .box-servico p{
+    margin: 8px 0 8px 0;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+section.servicos > .container .box-servico:nth-of-type(1),
+section.servicos > .container .box-servico:nth-of-type(3){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+    position: relative;
+}
+
+section.servicos > .container .box-servico:nth-of-type(2){
+    width: 40%;
+    padding: 50px 2%;
+    background-color: #688293;
+}
+
+.fa-tooth{
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
+}
+
+/*******************/
+
