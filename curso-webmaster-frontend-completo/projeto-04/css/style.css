@@ -35,7 +35,7 @@ header div.logo h1 {
     width      : 236px;
     height     : 40px;
     float      : left;
-    color      : #b4b4b4;
+    color      : #576975;
     font-weight: 300;
 }
 
@@ -47,18 +47,43 @@ header nav.menu-desktop ul li {
     float          : left;
     padding        : 0 20px;
     line-height    : 40px;
-    text-transform : uppercase;
     list-style-type: none;
 }
 
-header nav.menu-desktop a {
+header ul a {
     color          : #b4b4b4;
     text-decoration: none;
+    text-transform : uppercase;
 }
 
 header nav.menu-mobile{
+    width: 30px;
+    height: 35px;
     display: none;
     float: right;
+    cursor: pointer;
+    margin-right: 5px;
+    background-image: url('../images/icon-mobile.png');
+    background-size: 100% 100%;
+}
+
+header nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+header nav.menu-mobile ul li{
+    padding: 10px 0;
+    /* border-top: 1px solid #576975; */
+}
+/**Se cliente quiser divisões no menu-mobile, ativar as borders**/
+header nav.menu-mobile ul:last-child{
+    /* border-bottom: 1px solid #576975; */
 }
 
 /*******************/
@@ -181,9 +206,27 @@ section.perfil-container .txt-perfil p {
 
 /*******************/
 
-/*>>> Sessao 04 |  <<<*/
+/*>>> Sessao 04 |  Video <<<*/
 
+section.video{
+    padding: 50px 0;
+}
 
+section.video .box-video{
+    width: 33.3%;
+    float: left;
+    position: relative;
+    padding-top: calc(33.3% * 0.6);
+}
+
+section.video .box-video iframe{
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /*******************/
 
@@ -217,7 +260,13 @@ section.perfil-container .txt-perfil p {
         padding         : 50px 2%;
     }
 
+    section.perfil-container .wraper-perfil{
+        padding-top: 0;
+    }
+
     section.perfil-container .wraper-perfil2{
+        height: auto;
+        position: static;
         display: inline-block;
         text-align: center;
     }
@@ -236,12 +285,28 @@ section.perfil-container .txt-perfil p {
         width: 95%;
         padding: 0 30px;
     }
+
+    section.video{
+        text-align: center;
+    }
+
+    section.video .box-video{
+        display: inline-block;
+        width: 70%;
+        float: none;
+        padding-top: calc(70% * 0.6);
+    }
 }
 
 @media screen and (max-width: 580px){
     section.perfil-container .img-perfil{
         width: 80%;
         padding-top: 110%;
+    }
+
+    section.video .box-video{
+        width: 100%;
+        padding-top: calc(100% * 0.6);
     }
 }
 
