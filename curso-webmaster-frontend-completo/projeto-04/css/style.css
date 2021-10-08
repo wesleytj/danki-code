@@ -4,7 +4,7 @@
     margin        : 0;
     padding       : 0;
     box-sizing    : border-box;
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 html,
@@ -51,7 +51,7 @@ header nav.menu-desktop ul li {
 }
 
 header ul a {
-    color          : #b4b4b4;
+    color          : #576975;
     text-decoration: none;
     text-transform : uppercase;
 }
@@ -199,7 +199,7 @@ section.perfil-container .txt-perfil h2 {
 }
 
 section.perfil-container .txt-perfil p {
-    color     : #4b4b4b;
+    color     : #b4b4b4;
     font-size : 14px;
     margin-top: 8px;
 }
@@ -230,6 +230,44 @@ section.video .box-video iframe{
 
 /*******************/
 
+/*>>> Sessao 05 |  Tratamentos <<<*/
+
+section.tratamentos{
+    text-align: center;
+}
+
+section.tratamentos > h2{
+    text-transform: uppercase;
+    color: #576975;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+section.tratamentos .tratamento-container{
+    width: 33.3%;
+    float: left;
+    text-align: left;
+    padding: 20px 0;
+}
+
+section.tratamentos .tratamento-single{
+    padding: 20px 40px 0 0; 
+}
+
+.tratamento-single h2{
+    font-size: 18px;
+    font-weight: normal;
+    color: #737373;
+}
+
+.tratamento-single p{
+    font-size: 13px;
+    text-align: justify;
+    color: #b4b4b4;
+    margin-top: 10px;
+}
+
+/*******************/
 
 /*>>> RESPONSIVO | MediaQuery <<<*/
 
