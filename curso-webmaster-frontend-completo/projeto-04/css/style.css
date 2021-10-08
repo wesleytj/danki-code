@@ -234,6 +234,8 @@ section.video .box-video iframe{
 
 section.tratamentos{
     text-align: center;
+    padding: 40px 0;
+    background-color: rgba(104, 130, 147, 0.1);
 }
 
 section.tratamentos > h2{
@@ -268,6 +270,54 @@ section.tratamentos .tratamento-single{
 }
 
 /*******************/
+
+/*>>> Sessao 06 |  Depoimentos <<<*/
+
+section.depoimentos{
+    padding: 50px 0;
+}
+
+section.depoimentos > h2{
+    font-size: 18px;
+    text-align: center;
+    color: #698293;
+}
+
+section.depoimentos .container{
+    max-width: 400px;
+    padding: 50px 0;
+}
+
+section.depoimentos .depoimento-single{
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.depoimento-single quote{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+
+.depoimento-single .nome-depoimento{
+    padding: 20px 0;
+}
+
+.nome-depoimento img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.nome-depoimento span{
+    font-size: 10px;
+    color: #b4b4b4;
+    /* display: inline-block; */
+    vertical-align: top;
+}
+
+/*******************/
+
 
 /*>>> RESPONSIVO | MediaQuery <<<*/
 
