@@ -274,7 +274,7 @@ section.tratamentos .tratamento-single{
 /*>>> Sessao 06 |  Depoimentos <<<*/
 
 section.depoimentos{
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 section.depoimentos > h2{
@@ -318,8 +318,78 @@ section.depoimentos .depoimento-single{
 
 /*******************/
 
+/*>>> Sessao 07 |  Social <<<*/
+/*Instagram*/
+
+.instagram{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    background-color: #98a5ae;
+}
+
+.instagram i{
+    font-size: 25px;
+    margin: 0 0 8px 0;
+}
+
+.instagram p{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/*mosaico-social*/
+.mosaico-social{
+    width: 100%;
+    float: left;
+}
+
+.img-mosaico-single-social{
+    width: calc(100% / 9);
+    float: left;
+    padding-top: calc(100% / 9);
+    border: 1px solid white; /*Ilusao de divisao*/
+    /*Colocar as imagens aqui
+    background-image: url('');*/
+
+    /*Apagar depois que colocar imagem*/
+    background-color: #ccc;
+}
+
+/*Facebook*/
+.facebook{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    background-color: #576975;
+}
+
+.facebook i{
+    font-size: 25px;
+    margin: 0 0 8px 0;
+}
+
+.facebook p{
+    font-size: 13px;
+    line-height: 20px;
+}
+/*******************/
 
 /*>>> RESPONSIVO | MediaQuery <<<*/
+@media screen and (max-width: 1024px){
+    .img-mosaico-single-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social > div:nth-of-type(1n + 7){
+        display: none;
+    }
+}
 
 @media screen and (max-width: 768px) {
     header nav.menu-desktop{
@@ -383,6 +453,15 @@ section.depoimentos .depoimento-single{
         width: 70%;
         float: none;
         padding-top: calc(70% * 0.6);
+    }
+
+    .img-mosaico-single-social{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-social > div:nth-of-type(1n + 4){
+        display: none;
     }
 }
 
