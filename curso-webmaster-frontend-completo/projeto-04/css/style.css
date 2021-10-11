@@ -97,12 +97,11 @@ header nav.menu-mobile ul:last-child{
 .img-single-mosaico {
     width           : 100%;
     padding-top     : 100%;
-    background-color: #ccc;
     border          : 5px solid #fff;
-
-    /*  adicionar imagem do mosaico aqui 
-            background-image: url();
-     */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: #ccc; */
 }
 
 /*******************/
@@ -183,9 +182,10 @@ section.perfil-container .wraper-perfil2 {
 section.perfil-container .img-perfil {
     width           : 40%;
     height          : 100%;
-    /* Colocar imagem do profissional aqui
-    background-image: url(''); */
-    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: #ccc; */
 }
 
 section.perfil-container .txt-perfil {
@@ -350,12 +350,10 @@ section.depoimentos .depoimento-single{
     width: calc(100% / 9);
     float: left;
     padding-top: calc(100% / 9);
-    border: 1px solid white; /*Ilusao de divisao*/
-    /*Colocar as imagens aqui
-    background-image: url('');*/
-
-    /*Apagar depois que colocar imagem*/
-    background-color: #ccc;
+    border: 3px solid white; /*Ilusao de divisao*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*Facebook*/
