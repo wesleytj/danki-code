@@ -1,0 +1,120 @@
+/*>>> Globais <<<*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.selected{
+    color: #ff0000 !important;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+/**********************/
+
+/*>>> Header / Menu <<<*/
+header{
+    padding: 10px 0;
+}
+
+header .logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    background-image: url('../images/logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 112% 112%;
+    background-position: left top;
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    float: left;
+    padding: 0 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+header nav.menu-desktop ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*Escondendo menu-mobile na versao desktop*/
+header nav.menu-mobile{
+    display: none;
+}
+/**********************/
+
+/*>>> Sessão01 | Banner <<<*/
+section.banner{
+    height: 85vh;
+    background-image: url(../images/bg-grande.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+/**********************/
+
+/*>>> Responsivo | MediaQueries <<<*/
+@media screen and (max-width: 1024px) {
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    section.banner{
+        height: 70vh;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.banner{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    section.banner{
+        background-size: contain;
+        background-image: url(../images/bg-medio.jpg);
+    }
+}
+
+@media screen and (max-width: 305px) {
+    section.banner{
+        height: 50vh;
+        background-image: url(../images/bg-pequeno.jpg);
+        background-size: cover;
+    }
+}
