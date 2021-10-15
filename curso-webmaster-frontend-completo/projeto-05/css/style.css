@@ -160,12 +160,16 @@ section.banner{
 /**********************/
 
 /*>>> Sessão02 | Destaques <<<*/
+section.destaques{
+    padding: 60px 0 100px 0;
+}
+
 section.destaques .titulo-destaque{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 0;
+    padding: 20px 0 40px 0;
 }
 
 section.destaques .titulo-destaque > *{
@@ -235,7 +239,85 @@ section.destaques .titulo-destaque h2{
 }
 /**********************/
 
+/*>>> Sessão03 | Serviços-Descrição <<<*/
+section.servico-descricao{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px 0;
+}
 
+/*servicos*/
+section.servico-descricao .servico{
+    height: 300px;
+    padding: 40px 20px;
+    background-color: #262626;
+}
+
+.servico .container{
+    width: 80%;
+}
+
+.servico .container > div{
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.servico h2{
+    color: rgb(255, 251, 0);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.servico ul{
+    list-style-type: none;
+}
+
+.servico ul li{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.servico a{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: rgb(255, 251, 0);
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 80px;
+}
+
+/*descrição*/
+section.servico-descricao .descricao{
+    height: 300px;
+    padding: 40px 20px;
+    background-color: rgb(255, 251, 0);
+}
+
+.descricao .container{
+    width: 80%;
+}
+
+.descricao h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.descricao p{
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 18px;
+}
+/**********************/
 
 /*>>> Responsivo | MediaQueries <<<*/
 @media screen and (max-width: 1240px){
