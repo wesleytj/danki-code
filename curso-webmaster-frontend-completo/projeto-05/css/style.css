@@ -239,8 +239,8 @@ section.destaques .titulo-destaque h2{
 }
 /**********************/
 
-/*>>> Sessão03 | Serviços-Descrição <<<*/
-section.servico-descricao{
+/*>>> Sessão03 | Serviços-Depoimentos <<<*/
+section.servico-depoimento{
     height: 300px;
     display: flex;
     justify-content: center;
@@ -250,7 +250,7 @@ section.servico-descricao{
 }
 
 /*servicos*/
-section.servico-descricao .servico{
+section.servico-depoimento .servico{
     height: 300px;
     padding: 40px 20px;
     background-color: #262626;
@@ -297,22 +297,22 @@ section.servico-descricao .servico{
 }
 
 /*descrição*/
-section.servico-descricao .descricao{
+section.servico-depoimento .depoimento{
     height: 300px;
     padding: 40px 20px;
     background-color: rgb(255, 251, 0);
 }
 
-.descricao .container{
+.depoimento .container{
     width: 80%;
 }
 
-.descricao h2{
+.depoimento h2{
     font-size: 25px;
     font-weight: 500;
 }
 
-.descricao p{
+.depoimento p{
     margin: 10px 0;
     font-weight: lighter;
     font-size: 18px;
