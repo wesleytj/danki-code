@@ -417,6 +417,7 @@ form .form-wraper:nth-of-type(5){
 }
 /**********************/
 
+/*>>> Footer / Rodapé */
 footer{
     padding: 20px 0;
     color: #fff;
@@ -438,6 +439,7 @@ footer nav ul li a{
 footer p{
     float: right;
 }
+/**********************/
 
 /*>>> Responsivo | MediaQueries <<<*/
 @media screen and (max-width: 1240px){
@@ -499,6 +501,10 @@ footer p{
 }
 
 @media screen and (max-width: 768px) {
+    .w50{
+        width: 100%;
+    }
+
     section.banner{
         height: 70vh;
     }
@@ -565,6 +571,19 @@ footer p{
         margin: 40px auto;
         text-align: center;
     }
+
+    footer nav ul li{
+        float: none;
+        display: inline-block;
+    }
+    
+    footer nav, footer p{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 460px){
@@ -593,6 +612,10 @@ footer p{
 
     .servico, .depoimento{
         height: 50% !important;
+    }
+
+    footer{
+        font-size: 14px;
     }
 }
 
