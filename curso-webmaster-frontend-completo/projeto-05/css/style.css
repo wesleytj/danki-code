@@ -245,7 +245,6 @@ section.servico-depoimento{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     padding: 40px 0;
 }
 
@@ -292,8 +291,6 @@ section.servico-depoimento .servico{
     border-radius: 3px;
     background-color: rgb(255, 251, 0);
     padding: 10px 15px;
-    position: absolute;
-    bottom: 80px;
 }
 
 /*depoimento*/
@@ -312,10 +309,36 @@ section.servico-depoimento .depoimento{
     font-weight: 500;
 }
 
-.depoimento p{
-    margin: 10px 0;
+.depoimento .depoimento-single{
+    margin-top: 10px;
+}
+
+.depoimento-single p{
     font-weight: lighter;
     font-size: 18px;
+}
+/*setas de navegação dos depoimentos*/
+.navigation{
+    float: left;
+}
+
+.navigation i{
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.navigation .fa-chevron-right{
+    margin-left: 10px;
+}
+
+.author{
+    float: right;
+    margin: 15px 0 0 20px;
+}
+
+.author p{
+    font-weight: normal;
 }
 /**********************/
 
@@ -429,9 +452,49 @@ footer p{
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 838px){
     header .container{
         max-width: 460px;
+    }
+
+    section.destaques{
+        padding: 40px 0 50px 0 !important;
+    }
+
+    section.servico-depoimento{
+        height: 50%;
+        flex-direction: column;
+        justify-content: inherit;
+        padding: 0;
+    }
+
+    .servico, .depoimento{
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .servico .container, .depoimento .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .servico .container > div{
+        margin: 0;
+    }
+
+    .servico ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .servico a{
+        display: block;
+        max-width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }
 
@@ -522,6 +585,14 @@ footer p{
         display: block;
         transform: none;
         margin: 20px 0 !important;
+    }
+
+    section.servico-depoimento{
+        height: 70%;
+    }
+
+    .servico, .depoimento{
+        height: 50% !important;
     }
 }
 
