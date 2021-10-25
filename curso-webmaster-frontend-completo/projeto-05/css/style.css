@@ -56,6 +56,20 @@ html, body{
 .titulo h2{
     font-style: italic;
 }
+/*Botão Mais Informações*/
+.btn{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: rgb(255, 251, 0);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
 /**********************/
 
 /*>>> Header / Menu <<<*/
@@ -225,18 +239,6 @@ section.destaques{
     font-weight: lighter;
     margin: 5px 0 20px 0;
 }
-
-.info a{
-    font-size: 13px;
-    font-weight: 500;
-    font-style: italic;
-    text-transform: uppercase;
-    color: #000;
-    text-decoration: none;
-    border-radius: 3px;
-    background-color: rgb(255, 251, 0);
-    padding: 10px 15px;
-}
 /**********************/
 
 /*>>> Sessão03 | Serviços-Depoimentos <<<*/
@@ -377,16 +379,9 @@ section.contato textarea{
 }
 
 section.contato input[type=submit]{
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #000;
     border: none;
     box-shadow: 2px 2px rgb(211, 207, 9);
     border-radius: 3px;
-    background-color: rgb(255, 251, 0);
-    padding: 10px 15px;
-    cursor: pointer;
 }
 
 form .form-wraper:nth-of-type(5){
@@ -520,6 +515,12 @@ aside.sidebar{
     width: calc(100% / 4);
 }
 /***************************************/
+
+/******     >>>>> VEICULO-DETALHES <<<<<     ******/
+section.venda-single .container{
+    padding: 40px 0;
+}
+/*************************************************/
 
 /*>>> Responsivo | MediaQueries <<<*/
 @media screen and (max-width: 1240px){
