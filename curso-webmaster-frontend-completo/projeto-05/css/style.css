@@ -425,15 +425,11 @@ section.vendas{
     margin: 0 0 40px 0;
 }
 
-section.vendas .container{
-    /* max-width: 1440px; */
-}
-
 section.vendas .titulo{
     padding: 90px 0;
 }
 
-.sidebar{
+aside.sidebar{
     width: 30%;
     float: left;
 }
@@ -450,11 +446,12 @@ section.vendas .titulo{
 
 .search1 .barra-preco{
     width: 100%;
+    max-width: 250px;
     height: 20px;
     border: 1px solid #ccc;
     border-radius: 20px;
     background-color: #fff;
-    margin-top: 10px;
+    margin: 10px auto;
     position: relative;
 }
 
@@ -483,7 +480,9 @@ section.vendas .titulo{
 }
 
 .valor-pesquisa{
-    margin-top: 8px;
+    max-width: 250px;
+    margin: 8px auto;
+    overflow: hidden;
 }
 
 .valor-pesquisa p{
@@ -529,9 +528,41 @@ section.vendas .titulo{
     }
 }
 
+@media screen and (max-width: 1100px){
+    .vitrine-venda .vitrine-destaques .vitrine-single{
+        margin: 40px auto;
+        border: 5px solid #fff;
+    }
+
+    .vitrine-venda .vitrine-destaques .vitrine-single a{
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     section.banner{
         height: 70vh;
+    }
+
+    aside.sidebar, .vitrine-venda{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .search1{
+        width: 100%;
+    }
+
+    .search2 form{
+        max-width: 250px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .vitrine-venda{
+        margin-top: 50px;
     }
 }
 
@@ -598,6 +629,13 @@ section.vendas .titulo{
     .titulo > div{
         max-width: 150px;
     }
+
+    .vitrine-venda .vitrine-destaques .vitrine-single{
+        display: block;
+        width: 100%;
+        /* caso a margin com border nao de certo
+         margin: 40px auto; */
+    }
 }
 
 @media screen and (max-width: 672px) {
@@ -610,7 +648,8 @@ section.vendas .titulo{
     }
 
     header nav.menu-mobile{
-        display: block;
+        /* Deixar display:block para mostrar no modo mobile */
+        /* display: block; */
     }
 
     section.banner{
