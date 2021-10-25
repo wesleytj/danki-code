@@ -520,6 +520,55 @@ aside.sidebar{
 section.venda-single .container{
     padding: 40px 0;
 }
+
+.info-produto{
+    width: 60%;
+    float: left;
+}
+
+.info-produto .foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    background-color: #ccc;
+    /*colocar imagem destaque*/
+    /*background-image: url();
+    background-size: contain;
+    background-position: center;*/
+}
+
+.descricao-produto{
+    width: 40%;
+    float: left;
+    padding: 0 20px;
+}
+
+.descricao-produto p{
+    max-width: 360px;
+    margin: 20px 0 40px 0;
+}
+
+nav.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav.galeria .mini-img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #aaa;
+    border-right: 5px solid #fff;
+    border-top: 5px solid #fff;
+    cursor: pointer;
+}
+
+nav.galeria i{
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+}
 /*************************************************/
 
 /*>>> Responsivo | MediaQueries <<<*/
@@ -564,6 +613,26 @@ section.venda-single .container{
 
     .vitrine-venda{
         margin-top: 50px;
+    }
+
+    .info-produto{
+        width: 100%;
+    }
+
+    .info-produto .foto-destaque{
+        width: 60%;
+        padding-top: 60%;
+        margin: 10px auto;
+    }
+
+    .descricao-produto{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .descricao-produto p{
+        margin: 20px auto 40px auto;
     }
 }
 
