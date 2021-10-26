@@ -394,6 +394,7 @@ footer{
     padding: 20px 0;
     color: #fff;
     background-color: #262626;
+    margin-top: 20px;
 }
 
 footer nav{
@@ -571,6 +572,55 @@ nav.galeria i{
 }
 /*************************************************/
 
+/******     >>>>> Sobre <<<<<     ******/
+section.sobre{
+    min-height: 90%;
+}
+
+section.sobre .titulo{
+    padding: 100px 0 60px 0;
+}
+
+section.sobre .img-local{
+    width: 80%;
+    padding-top: 30%;
+    /* min-width: 500px; */
+    min-height: 200px;
+    background-image: url(../images/local.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: #ccc; */
+    margin: 0 auto;
+}
+
+section.sobre .txt-sobre1{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+section.sobre .txt-sobre2{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.txt-sobre2 .mini-img{
+    width: 20%;
+    padding-top: 20%;
+    min-width: 150px;
+    min-height: 150px;
+    float: left;
+    background-color: #ccc;
+}
+
+.txt-sobre2 p{
+    width: 80%;
+    float: left;
+    padding: 10px 50px;
+}
+/**************************************/
+
 /*>>> Responsivo | MediaQueries <<<*/
 @media screen and (max-width: 1240px){
     header .container{
@@ -633,6 +683,19 @@ nav.galeria i{
 
     .descricao-produto p{
         margin: 20px auto 40px auto;
+    }
+
+    .txt-sobre2 .mini-img{
+        float: none;
+        margin: 10px auto;
+        min-width: 200px;
+        min-height: 200px;
+    }
+    
+    .txt-sobre2 p{
+        width: 100%;
+        float: none;
+        padding: 10px 0;
     }
 }
 
@@ -705,6 +768,10 @@ nav.galeria i{
         width: 100%;
         /* caso a margin com border nao de certo
          margin: 40px auto; */
+    }
+
+    section.sobre .img-local{
+        background-size: cover;
     }
 }
 
