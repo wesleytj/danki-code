@@ -4,20 +4,20 @@
 
 ## Editores de texto
 
-- VS Code (Recomendado)
+- [VS Code (Recomendado)](https://code.visualstudio.com/docs/?dv=win)
 
-- Sublime Text
+- [Sublime Text](https://www.sublimetext.com/download_thanks?target=win-x64)
 
-- Notepad++
+- [Notepad++](https://notepad-plus-plus.org/downloads/)
 
 
 
 ## Links úteis
 
-- Material Theme - Sublime
+- [Material Theme - Sublime](https://github.com/material-theme/vsc-material-theme) e [Color Sublime](https://colorsublime.com)
 
-- W3School
+- [W3School](https://www.w3schools.com/)
 
-- Window Resizer - Extensão navegador
+- [Window Resizer - Extensão navegador](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh)
 
 
