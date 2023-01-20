@@ -139,8 +139,12 @@ A mais utilizadas são:
 
 **Exemplo de código:**
 
+```html
 <form>
     <input type="text" placeholder="Digite seu nome"/>
     <textarea></textarea>
     <input type="submit" value="Enviar" />
 </form>
+```
+
+
