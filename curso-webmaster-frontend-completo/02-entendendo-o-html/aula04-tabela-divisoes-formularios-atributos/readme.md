@@ -96,8 +96,6 @@ Já, introduzindo um pouco sobre atributos, existem alguns atributos que podemos
 <!-- Não é indicado manipular o alinhamento e a borda através do atributos da tag, é boa prática de programação, deixar essa função diretamente para o CSS -->
 ```
 
-
-
 ## Formulário
 
 ```html
@@ -133,4 +131,16 @@ A mais utilizadas são:
 </form>
 ```
 
+**Atributo para formulário:**
 
+- placeholder
+  
+  - O placeholder é aquela mensagem meio apagada que fica dentro dos inputs
+
+**Exemplo de código:**
+
+<form>
+    <input type="text" placeholder="Digite seu nome"/>
+    <textarea></textarea>
+    <input type="submit" value="Enviar" />
+</form>
