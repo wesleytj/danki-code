@@ -56,6 +56,4 @@ Outra maneira de utilizar o CSS, é dentro do próprio documento `index.html`
 </body>
 ```
 
-**Obs.** *Perceba que para utilizar o CSS dentro do documento index.html, utilizamos a tag <style> dentro da tag <head> do html, e dentro da tag <style> fica a estilização*
-
-
+**Obs.** *Perceba que para utilizar o CSS dentro do documento index.html, utilizamos a tag `<style>` dentro da tag ` <head>` do html, e dentro da tag ` <style>` fica a estilização*
