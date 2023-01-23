@@ -1,0 +1,28 @@
+/* h1{
+    color: red;
+} */
+
+/* #div1 h1{
+    color: red;
+}
+
+#div2 h1{
+    color: orange;
+}
+
+#div3 h1{
+    color: blue;
+} */
+
+/* #div1  h1{
+    color: aqua;
+} */
+
+/* #div1 > h1{
+    color: aqua;
+} */
+
+/* .class h1{
+    color: yellow;
+    font-size: 45px;
+} */
